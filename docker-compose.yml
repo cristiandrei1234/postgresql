@@ -13,6 +13,8 @@ services:
     networks:
       - cibernova
     restart: unless-stopped
+    ports:
+      - "5432:5432" # Map PostgreSQL port to the same port on the host
 
 volumes:
   postgres_data:
